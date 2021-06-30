@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/MundoDosNumeros-v2.0.1-brightgreen"/> ![GitHub stars](https://img.shields.io/github/stars/gabriel-cordeiro-dev/CursoAdsPI) <img src="https://img.shields.io/badge/Contribuitors-2-red"/>
+<img src="https://img.shields.io/badge/MundoDosNumeros-v2.0.1-brightgreen"/> ![GitHub stars](https://img.shields.io/github/stars/gabriel-cordeiro-dev/QuizApp) <img src="https://img.shields.io/badge/Contribuitors-2-red"/>
 
 # Projeto Integrador ADS 2021/1
  ## Descrição do Projeto
