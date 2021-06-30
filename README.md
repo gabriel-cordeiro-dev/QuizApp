@@ -36,6 +36,8 @@ Conteúdos
 
 <img src="telaLogin1.png"/>
 <img src="telaPerguntas.png"/>
+<img src="telaResultado.png"/>
+<img src="telaRanking.png"/>
 
 # Como Usar
 ## Pre-Requisitos
