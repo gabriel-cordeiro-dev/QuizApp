@@ -1,0 +1,18 @@
+.myLink {
+  text-decoration: none;
+  background: none;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.myLink:hover {
+  background: rgb(116, 201, 235);
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+}

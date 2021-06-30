@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 2px solid black;
+  padding: 0 50px 18px 50px;
+  background: skyblue;
+}
+.numeroslinha1 {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+}
+.numeroslinha2 {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+}
+
+.numero1 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  grid-row: 2;
+  background: deepskyblue;
+}
+.numero2 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  grid-row: 1;
+  background: salmon;
+}
+.numero3 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  grid-row: 2;
+  background: yellow;
+}
+.numero {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 2px;
+  background: white;
+  font-size: 31px;
+}
+
+.customnavbar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0;
+  background: skyblue;
+}
+
+.titulo {
+  margin-left: 20px;
+  margin-bottom: 0;
+  font-family: "Reenie Beanie";
+  background: skyblue;
+}
+
+nav {
+  font-size: 28px;
+  font-weight: 600;
+  background: skyblue;
+}

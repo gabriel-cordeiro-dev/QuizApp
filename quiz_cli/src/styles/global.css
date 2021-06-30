@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: aquamarine;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #b00020;
+  --yellow: #ffda1f;
+  --whatsapp-green: #34a853;
+
+  --primary-500: Skyblue;
+  --secondary-500: Aquamarine;
+
+  --numero1: DeepSkyBlue;
+  --numero2: Salmon;
+  --numero3: Yellow;
+  --botoes1: DarkSlateBlue;
+  --botaoOpcao: Red;
+}
+
+body {
+  background: Aquamarine;
+  color: #000000;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

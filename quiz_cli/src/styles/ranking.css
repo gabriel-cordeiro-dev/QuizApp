@@ -1,0 +1,38 @@
+.rankingContainer {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rankingTitle {
+  height: 35px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+}
+table,
+tr {
+  width: 100%;
+  height: 35px;
+}
+tr:nth-child(even) td {
+  background: skyblue;
+}
+tr:nth-child(odd) td {
+  background: none;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.azul {
+  background: skyblue;
+  text-align: center;
+  vertical-align: middle;
+}

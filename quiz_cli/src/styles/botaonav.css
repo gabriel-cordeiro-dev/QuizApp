@@ -1,0 +1,15 @@
+.botaoNav {
+  background: skyblue;
+  border: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.botaoNav:hover {
+  background: rgb(116, 201, 235);
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

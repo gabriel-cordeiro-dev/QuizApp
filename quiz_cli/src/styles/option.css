@@ -1,0 +1,51 @@
+.opcao {
+  width: 325px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  border: 2px solid black;
+}
+.opcaoSelecionada {
+  width: 325px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  border: 2px solid red;
+}
+.letra {
+  width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: skyblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-right: 2px solid black;
+}
+.letraSelecionada {
+  width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-right: 2px solid red;
+}
+.texto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 20px;
+  font-weight: 600;
+}
