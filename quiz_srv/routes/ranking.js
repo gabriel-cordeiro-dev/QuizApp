@@ -1,7 +1,6 @@
 const User = require("../models/user");
-const bcrypt = require("bcrypt");
 const router = require("express").Router();
-const salt = 10;
+
 
 router.get("/", (req, res) => {
   User.findAll({
