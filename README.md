@@ -67,6 +67,27 @@ $ npm start ou yarn start
 # O servidor inciará na porta:5555 - acesse <http://localhost:5555>
 ```
 
+## 🎲 Rodando o Front-End (cli)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/gabriel-cordeiro-dev/QuizApp.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd QuizApp
+
+# Vá para a pasta front-end
+$ cd quiz_cli
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm start ou yarn start
+
+
+```
+
 ## Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -93,7 +114,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://github.com/pauloegidiocardoso">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/64991125?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Gabriel Cordeiro</b></sub></a> <a href="https://github.com/pauloegidiocardoso" title="CursoADS"></a>
+ <sub><b>Paulo Cardoso</b></sub></a> <a href="https://github.com/pauloegidiocardoso" title="CursoADS"></a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Paulo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulocardoso65131/)](https://www.linkedin.com/in/paulocardoso65131/) 
 [![Gmail Badge](https://img.shields.io/badge/-pauloegidiocardoso@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:pauloegidiocardoso@gmail.com)](mailto:pauloegidiocardoso@gmail.com)

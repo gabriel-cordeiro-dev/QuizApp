@@ -18,33 +18,79 @@ export function Ranking() {
     { posicao: 10, usuario: "", pontuacao: null },
   ]);
 
+  const ordena = (dados, ordem, campo) => {
+    let min = 0;
+    let aux = 0;
+    for (var i = 0; i < dados.length; i++) {
+      min = i;
+      for (var j = i + 1; j < dados.length; j++) {
+        if (campo === "pontuacao") {
+          if (ordem === "asc") {
+            if (dados[j].pontuacao < dados[min].pontuacao) min = j;
+          }
+          if (ordem === "desc") {
+            if (dados[j].pontuacao > dados[min].pontuacao) min = j;
+          }
+        }
+        if (campo === "nome") {
+          if (ordem === "asc") {
+            if (dados[j].usuario < dados[min].usuario) min = j;
+          }
+          if (ordem === "desc") {
+            if (dados[j].usuario > dados[min].usuario) min = j;
+          }
+        }
+      }
+      if (i !== min) {
+        aux = dados[i];
+        dados[i] = dados[min];
+        dados[min] = aux;
+      }
+    }
+    let l = 0;
+    const newDados = dados.map((rank) => {
+      l = l + 1;
+      const userRank = {
+        posicao: l,
+        usuario: rank.usuario,
+        pontuacao: rank.pontuacao,
+      };
+      return userRank;
+    });
+    if (newDados.length > 10) newDados.length = 10;
+    setLista(newDados);
+  };
+
   useEffect(() => {
-    axios.get("http://localhost:5555/ranking").then(async (res) => {
+    axios.get("http://3.235.249.44:5555/ranking").then(async (res) => {
       let pos = 0;
-      setLista(
-        await Promise.all(
-          res.data.map((individual) => {
-            pos = pos + 1;
-            const userRank = {
-              posicao: pos,
-              usuario:
-                individual.username[0].toUpperCase() +
-                individual.username.substring(1),
-              pontuacao: individual.pontuacao,
-            };
-            return userRank;
-          })
-        )
+
+      const desordenada = await Promise.all(
+        res.data.map((individual) => {
+          pos = pos + 1;
+          const userRank = {
+            posicao: pos,
+            usuario:
+              individual.username[0].toUpperCase() +
+              individual.username.substring(1),
+            pontuacao: individual.pontuacao,
+          };
+          return userRank;
+        })
       );
 
+      ordena(desordenada, "desc", "pontuacao");
       const sobrante = [];
-      for (var i = res.data.length; i < 10; i++) {
-        sobrante.push({
-          posicao: i + 1,
-          usuario: "",
-          pontuacao: null,
-        });
+      if (res.data.length < 10) {
+        for (var i = res.data.length; i < 10; i++) {
+          sobrante.push({
+            posicao: i + 1,
+            usuario: "",
+            pontuacao: null,
+          });
+        }
       }
+
       setRankingSobrante(sobrante);
     });
   }, []);

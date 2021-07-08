@@ -3,13 +3,7 @@ const router = require("express").Router();
 
 
 router.get("/", (req, res) => {
-  User.findAll({
-    order: [
-      ["pontuacao", "DESC"],
-      ["username", "ASC"],
-    ],
-    limit: 10,
-  })
+  User.findAll()
 
     .then((ranking) => {
       if (ranking) {
